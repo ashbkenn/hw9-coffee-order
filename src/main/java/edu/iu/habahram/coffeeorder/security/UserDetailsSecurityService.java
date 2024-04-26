@@ -1,7 +1,8 @@
 package edu.iu.habahram.coffeeorder.security;
 
+
 import edu.iu.habahram.coffeeorder.model.Customer;
-import edu.iu.habahram.coffeeorder.repository.CustomerRepository;
+import edu.iu.habahram.coffeeorder.repository.CustomerFileRepository;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -10,9 +11,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class UserDetailsSecurityService implements UserDetailsService {
-    CustomerRepository customerRepository;
+    CustomerFileRepository customerRepository;
 
-    public UserDetailsSecurityService(CustomerRepository customerRepository){
+    public UserDetailsSecurityService(CustomerFileRepository customerRepository){
         this.customerRepository = customerRepository;
     }
 

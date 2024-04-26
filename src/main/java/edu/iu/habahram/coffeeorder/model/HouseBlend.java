@@ -8,6 +8,6 @@ public class HouseBlend extends Beverage{
 
     @Override
     public String getDescription() {
-        return "House blend";
+        return "House Blend";
     }
 }
