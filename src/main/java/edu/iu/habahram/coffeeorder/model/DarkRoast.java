@@ -10,6 +10,4 @@ public class DarkRoast extends Beverage{
     public float cost() {
         return 1.99F;
     }
-
-
 }
